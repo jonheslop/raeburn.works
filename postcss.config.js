@@ -1,4 +1,5 @@
 const cssnext = require('postcss-cssnext');
+const purgecss = require("@fullhuman/postcss-purgecss");
 
 module.exports = {
   plugins: [
@@ -11,6 +12,9 @@ module.exports = {
           preserve: true
         }
       }
+    }),
+    purgecss({
+      content: ["*.html"],
     }),
     require('cssnano')
   ]
