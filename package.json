@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "css": "postcss css/style.pcss -o css/style.min.css -w",
-    "dev": "browser-sync start --server --files '*.html, css/*.css'"
+    "dev": "browser-sync start --server --files '*.html, css/*.css'",
+    "build": "postcss css/style.pcss -o css/style.min.css"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
